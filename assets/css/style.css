@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Lora', ;
+font-family: 'Work Sans', ; */
+}
+
+/* home *********************************/
+
+#home{
+    height: 100vh;
+    width: 100%;
+}
+.home-site{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.home-site-text{
+    justify-self: center;
+    font-family: 'Lora';
+    text-align: center;
+}
+.home-site-text h1{
+    font-size: 8vh;
+}
+.home-site-text p{
+    font-size: 5vh;
+}
+.home-site-img{
+    width: 60vw;
+}
+.home-site-img img{
+    width: 100%;
+}
+
+
+/* nav *********************************/
+.navig{
+    margin-top: .3vh;
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2E2E2E;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.navig-list{
+    justify-self: end;
+    width: 60vw;
+}
+.navig-list ul{
+    list-style: none;
+    margin-top: 5vh;
+}
+.navig-list li{
+    display: inline;
+    margin-right: 8vw;
+    
+}
+.navig-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Work Sans';
+}
+
+/* our store *******************************/
+
+.our-store-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #2E2E2E;
+}
+.our-store-img{
+    width: 60vw;
+    margin-bottom: 10vh;
+}
+.our-store-img img{
+    width: 100%;
+}
+.our-store-text{
+    color: white;
+}
+.our-store-text h1{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Lora';
+    margin-bottom: 2vh;
+}
+
+.our-store-text p{
+    font-family: 'Lora';
+    margin: 0 40px;
+    line-height: 2;
+    font-size: 1.3em;
+}
+
+/* featured  ******************/
+
+.featured-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featured-box-text{
+    margin: 10vh auto;
+}
+.featured-box-text h1{
+    font-size: 2em;
+    margin-bottom: 3vh;
+    font-family: 'Lora';
+}
+.featured-box-text p{
+    font-size: 1.3em;
+    font-family: 'Work Sans';
+}
+.featured-box-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.featured-box-gallery div{
+    padding: 2vw;
+}
+.featured-box-gallery img{
+    width: 100%;
+}
+.featured-box-gallery p{
+    color: #383834;
+    font-family: 'Work Sans';
+    padding-top: 5px;
+}
+.featured-box-video{
+    width: 30vw;
+    margin-top: 15px;
+    margin-bottom: 10vh;
+}
+.featured-box-video iframe{
+    width: 100%;
+}
+/* contact */
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #383834;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+.contact-text{
+    margin-left: 120px;
+}
+
+.contact-text h1{
+    font-size: 2em;
+    margin-bottom: 3vh;
+    font-family: 'Lora';;
+}
+.contact-text p{
+    color: white;
+    font-family: 'Work Sans';
+    padding-top: 5px;
+    line-height: 1.5;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+.contact-form label{
+    font-size: 1.5em;
+}
+.contact-form input{
+    padding: 1vh;
+    width: 20vw;
+    margin-bottom: 2vh;
+}
+
+.contact-form input[type="submit"]{
+    width: 100px;
+    padding: 1vh;
+    display: block;
+    border: white;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+/* footer *************************/
+
+footer{
+    background-color: #1D2C2F;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    font-family: 'lora';
+}
+footer div{
+    margin: 4vh 3vw;
+}
+footer li{
+    display: inline;
+    margin: 0 20px;
+}
+
+/* media **********************/
+
+@media only screen and (max-width: 600px) {
+    .home-site{
+        grid-template-columns: 1fr;
+    }
+    .home-site-img{
+        width: 100vw;
+    }       
+    .featured-box-video{
+        width: 90vw;
+    }
+    .featured-box-gallery{
+        grid-template-columns: 1fr ;
+    }
+    .our-store-box{
+        grid-template-columns: 1fr;
+    }
+    #contact{
+        grid-template-columns: 1fr;
+    }
+    .navig-list li{
+        margin-right: 2vw;
+        margin-top: 10px;
+    }
+}
